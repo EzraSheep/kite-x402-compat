@@ -1,0 +1,13 @@
+[package]
+name = "kite-x402-compat-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "x402 V2 wire types, header codec, validators and option matching (no I/O)"
+
+[lib]
+name = "x402_core"
+
+[lints]
+workspace = true

@@ -1,0 +1,13 @@
+[package]
+name = "kite-x402-compat-http"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Guarded HTTP client and black-box inspectors for x402 resource servers and facilitators"
+
+[lib]
+name = "x402_http"
+
+[lints]
+workspace = true

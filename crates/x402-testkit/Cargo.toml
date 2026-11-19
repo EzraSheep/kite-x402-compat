@@ -1,0 +1,13 @@
+[package]
+name = "kite-x402-compat-testkit"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Mock facilitator, reference resource server and active probes for x402"
+
+[lib]
+name = "x402_testkit"
+
+[lints]
+workspace = true

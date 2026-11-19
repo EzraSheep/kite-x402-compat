@@ -1,0 +1,33 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+license = "Apache-2.0"
+description = "Black-box x402 V2 compatibility test kit with a Kite network profile"
+keywords = ["x402", "kite", "testing", "payments", "conformance"]
+categories = ["development-tools::testing", "command-line-utilities"]
+
+[workspace.dependencies]
+x402-core = { package = "kite-x402-compat-core", path = "crates/x402-core", version = "0.1.0" }
+x402-report = { package = "kite-x402-compat-report", path = "crates/x402-report", version = "0.1.0" }
+x402-http = { package = "kite-x402-compat-http", path = "crates/x402-http", version = "0.1.0" }
+x402-testkit = { package = "kite-x402-compat-testkit", path = "crates/x402-testkit", version = "0.1.0" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+unwrap_used = "warn"
+expect_used = "warn"
+dbg_macro = "warn"
+todo = "warn"
+
+[profile.release]
+lto = "thin"
+strip = true

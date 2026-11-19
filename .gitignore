@@ -1,0 +1,6 @@
+/target
+**/*.rs.bk
+*.log
+/results*.json
+/report*.json
+.env

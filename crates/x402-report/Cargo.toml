@@ -1,0 +1,13 @@
+[package]
+name = "kite-x402-compat-report"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Test result model, summaries and renderers for kite-x402-compat"
+
+[lib]
+name = "x402_report"
+
+[lints]
+workspace = true
